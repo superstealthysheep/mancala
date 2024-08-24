@@ -1,0 +1,236 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\super\Documents\Programming-projects\mancala\mancala & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Using host:port 127.0.0.1:63171 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉mancala.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉mancala.core꞉> 
+; Jack-in done.
+clj꞉mancala.core꞉> 
+#'mancala.core/board-state
+clj꞉mancala.core꞉> 
+[3 3 3 3 3 3 3 3 3 3 3 3]
+clj꞉mancala.core꞉> 
+(3 3 3 3 3 3 3 3 3 3 3)
+clj꞉mancala.core꞉> 
+; Execution error (ClassCastException) at mancala.core/eval10321 (form-init14007435456528618377.clj:11).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉mancala.core꞉> 
+3
+clj꞉mancala.core꞉> 
+; Execution error (IndexOutOfBoundsException) at mancala.core/eval10573 (form-init14007435456528618377.clj:11).
+; null
+clj꞉mancala.core꞉> 
+[3 3 3 3 3 3 3 3 3 3 3 3]
+clj꞉mancala.core꞉> 
+[3 3 3 3 3 3 3 3 3 3 3 3]
+clj꞉mancala.core꞉> 
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\src\mancala\core.clj:1:8485).
+; Unable to resolve symbol: state in this context
+clj꞉mancala.core꞉> 
+#'mancala.core/state
+clj꞉mancala.core꞉> 
+{:board [3 3 3 3 3 3 3 3 3 3 3 3], :player 0, :scores [0 0]}
+clj꞉mancala.core꞉> 
+; Execution error (ArityException) at mancala.core/eval10575 (form-init14007435456528618377.clj:15).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉mancala.core꞉> 
+(3 3 3)
+clj꞉mancala.core꞉> 
+(4 4 4)
+clj꞉mancala.core꞉> 
+(3 3 3)
+clj꞉mancala.core꞉> 
+[3 3 3]
+clj꞉mancala.core꞉> 
+#'mancala.core/state
+clj꞉mancala.core꞉> 
+{:board [3 3 3 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+#'mancala.core/start-state
+clj꞉mancala.core꞉> 
+{:board [3 3 3 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+{:board [3 3 3 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+; Execution error (ArityException) at mancala.core/eval10585 (form-init14007435456528618377.clj:15).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; Execution error (ArityException) at mancala.core/eval10590 (form-init14007435456528618377.clj:19).
+; Wrong number of args (1) passed to: mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; Execution error (ArityException) at mancala.core/eval10595 (form-init14007435456528618377.clj:20).
+; Wrong number of args (1) passed to: mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; Execution error (ArityException) at mancala.core/eval10600 (form-init14007435456528618377.clj:21).
+; Wrong number of args (1) passed to: mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; [3 3 3 3 3 3 3 3 3 3 3 3]
+nil
+clj꞉mancala.core꞉> 
+; [3 3 3 3 3 3 3 3 3 3 3 3]
+nil
+clj꞉mancala.core꞉> 
+; [3 3 3 3 3 3 3 3 3 3 3 3]
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\src\mancala\core.clj:22:1).
+; Unable to resolve symbol: start-statej in this context
+clj꞉mancala.core꞉> 
+; (3 3 3 3 3)[3 3 3 3 3 3 3]
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+; (3 3 3 3 3)
+; [3 3 3 3 3 3 3]
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+; (3 3 3 3 3 3)
+; [3 3 3 3 3 3]
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+; [3 3 3 3 3 3]
+; [3 3 3 3 3 3]
+nil
+clj꞉mancala.core꞉> 
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\src\mancala\core.clj:21:14).
+; Unable to resolve symbol: scores in this context
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+; 0[3 3 3 3 3 3]
+; [3 3 3 3 3 3]0
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+;   0 [3 3 3 3 3 3]
+; [3 3 3 3 3 3]0
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+;  0 [3 3 3 3 3 3]
+; [3 3 3 3 3 3]  0
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+;  0 [3 3 3 3 3 3]
+;    [3 3 3 3 3 3]  0
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; [3 3 3 3 3 3 3 3 3 3 3 3]
+{:board [3 3 3 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; 1
+{:board [3 3 3 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; Execution error (ArityException) at mancala.core/make-move (form-init14007435456528618377.clj:29).
+; Wrong number of args (1) passed to: clojure.core/read-line
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Execution error (ClassCastException) at mancala.core/make-move (form-init14007435456528618377.clj:30).
+; class java.lang.String cannot be cast to class java.lang.Character (java.lang.String and java.lang.Character are in module java.base of loader 'bootstrap')
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; Where to move from?
+; 123
+{:board [3 3 3 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; Where to move from?
+; 123
+{:board [3 3 3 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\src\mancala\core.clj:30:18).
+; Unable to resolve symbol: % in this context
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; Where to move from?
+; 3
+{:board [3 3 3 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+{:board [4 4 4 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos 3}
+clj꞉mancala.core꞉> 
+{:board [4 4 4 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos 3}
+clj꞉mancala.core꞉> 
+{:board [0 4 4 4 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos 4}
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+{:board [0 4 4 4 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos 4}
+clj꞉mancala.core꞉> 
