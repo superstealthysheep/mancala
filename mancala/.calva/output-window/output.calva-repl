@@ -234,3 +234,1084 @@ clj꞉mancala.core꞉> 
 clj꞉mancala.core꞉> 
 {:board [0 4 4 4 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos 4}
 clj꞉mancala.core꞉> 
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\src\mancala\core.clj:47:5).
+; Unable to resolve symbol: curr-pos in this context
+clj꞉mancala.core꞉> 
+; Where to move from?
+; 8
+{:board [3 3 3 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\src\mancala\core.clj:41:1).
+; Unable to resolve symbol: in-hand in this context
+clj꞉mancala.core꞉> 
+; Where to move from?
+; 1
+{:board [3 3 3 3 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 0
+{:board [0 4 4 4 3 3 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos 4}
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 2
+{:board [3 3 0 4 4 4 3 3 3 3 3 3], :scores [0 0], :player 0, :in-hand 0, :pos 6}
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 9
+; Execution error (NullPointerException) at mancala.core/propagate-move (form-init14007435456528618377.clj:27).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\src\mancala\core.clj:1:8485).
+; Unable to resolve symbol: board in this context
+clj꞉mancala.core꞉> 
+#function[mancala.core/make-move]
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 9
+{:board [4 3 3 3 3 3 3 3 3 0 4 4], :scores [0 0], :player 0, :in-hand 0, :pos 1}
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 9
+;  0 [4 4 0 3 3 3]
+;    [4 3 3 3 3 3]  0
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/scoring-wells
+clj꞉mancala.core꞉> 
+{5 0, 11 2}
+clj꞉mancala.core꞉> 
+true
+clj꞉mancala.core꞉> 
+false
+clj꞉mancala.core꞉> 
+false
+clj꞉mancala.core꞉> 
+true
+clj꞉mancala.core꞉> 
+false
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 9
+;  0 [4 4 0 3 3 3]
+;    [4 3 3 3 3 3]  0
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 9
+;  0 [3 4 0 3 3 3]
+;    [4 4 3 3 3 3]  0
+nil
+clj꞉mancala.core꞉> 
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\src\mancala\core.clj:20:22).
+; Unable to resolve symbol: board in this context
+clj꞉mancala.core꞉> 
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\src\mancala\core.clj:20:22).
+; Unable to resolve symbol: board in this context
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 9
+; [3 4 0 3 3 3]
+;    [4 4 3 3 3 3]
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/start-state
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+{:board [0 4 4 4 3 3 0 3 3 3 3 3 3 0], :scores nil, :player 0, :in-hand 0, :pos 4}
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 9
+;  0 [3 3 4 0 3 3]
+;    [4 4 3 3 3 3] 3
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/scoring-wells
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 9
+;  0 [3 4 4 0 3 3]
+;    [4 3 3 3 3 3] 3
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/start-state
+clj꞉mancala.core꞉> 
+;  0 [3 3 3 3 3 3]
+;    [3 3 3 3 3 3] 3
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+{:board [3 3 3 3 3 3 0 3 3 3 3 3 3 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+;  0 [3 3 3 3 3 3]
+;    [3 3 3 3 3 3] 0
+nil
+clj꞉mancala.core꞉> 
+{:board [3 3 3 3 3 3 0 3 3 3 3 3 3 0], :player 0, :in-hand 0, :pos nil}
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 9
+;  0 [3 4 4 0 3 3]
+;    [4 3 3 3 3 3] 0
+nil
+clj꞉mancala.core꞉> 
+(exit)
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\.calva\output-window\output.calva-repl:377:1).
+; Unable to resolve symbol: exit in this context
+clj꞉mancala.core꞉> 
+(exit)
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\.calva\output-window\output.calva-repl:381:1).
+; Unable to resolve symbol: exit in this context
+clj꞉mancala.core꞉> 
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\super\Documents\Programming-projects\mancala\mancala & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\super\Documents\Programming-projects\mancala\mancala & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Using host:port 127.0.0.1:51250 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉mancala.core꞉> 
+; Jack-in done.
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 9
+;  0 [4 4 4 0 3 3]
+;    [3 3 3 3 3 3] 0
+nil
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 11
+;  0 [4 0 3 3 3 3]
+;    [4 4 3 3 3 3] 0
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+;    0 [3 3 3 3 3 3]
+; >    [3 3 3 3 3 3] 0
+nil
+clj꞉mancala.core꞉> 
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\src\mancala\core.clj:82:5).
+; Unable to resolve symbol: print-then-apply in this context
+clj꞉mancala.core꞉> 
+#'mancala.core/print-then-apply
+clj꞉mancala.core꞉> 
+;    0 [3 3 3 3 3 3]
+; >    [3 3 3 3 3 3] 0Where to move from?
+; Moving from 5
+;    0 [3 3 3 3 4 4]
+; >    [3 3 3 3 3 0] 1Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+;    0 [3 3 3 3 3 3]
+; >    [3 3 3 3 3 3] 0Where to move from?
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+;    0 [3 3 3 3 3 3]
+; >    [3 3 3 3 3 3] 0Where to move from?
+; Moving from 5
+; >  0 [3 3 3 3 4 4]
+;      [3 3 3 3 3 0] 1Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 5
+; >  0 [3 3 3 3 4 4]
+;      [3 3 3 3 3 0] 1
+nil
+clj꞉mancala.core꞉> 
+;    0 [3 3 3 3 3 3]
+; >    [3 3 3 3 3 3] 0Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+#'mancala.core/-main
+clj꞉mancala.core꞉> 
+#'mancala.core/scoring-wells
+clj꞉mancala.core꞉> 
+#'mancala.core/start-state
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+;    0 [3 3 3 3 3 3]
+; >    [3 3 3 3 3 3] 0
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+{:board [0 4 4 4 3 3 0 3 3 3 3 3 3 0], :scores nil, :player 0, :in-hand 0, :pos 4}
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/print-then-apply
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+;    0 [3 3 3 3 3 3]
+; >    [3 3 3 3 3 3] 0
+; Where to move from?
+; Moving from 5
+; >  0 [3 3 3 3 4 4]
+;      [3 3 3 3 3 0] 1
+; Where to move from?
+; Moving from 10
+{:board [3 3 3 3 3 0 1 4 4 3 0 4 4 1], :scores nil, :player 0, :in-hand 0, :pos 0}
+clj꞉mancala.core꞉> 
+;    0 [3 3 3 3 3 3]
+; >    [3 3 3 3 3 3] 0
+; Where to move from?
+; Moving from 5
+; >  0 [3 3 3 3 4 4]
+;      [3 3 3 3 3 0] 1
+; Where to move from?
+; Moving from 10
+;    1 [4 4 0 3 4 4]
+; >    [3 3 3 3 3 0] 1
+; Where to move from?
+; Moving from 10
+; >  1 [4 4 0 3 4 4]
+;      [3 3 3 3 3 0] 1
+nil
+clj꞉mancala.core꞉> 
+; ERROR: Unhandled REPL handler exception processing message {:op stacktrace, :id 802, :session 5136f72b-603a-4dcb-88d3-affe003e62d0}
+; java.util.concurrent.ExecutionException: java.lang.ExceptionInInitializerError
+; 	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+; 	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+; 	at clojure.core$deref_future.invokeStatic(core.clj:2317)
+; 	at clojure.core$future_call$reify__8544.deref(core.clj:7041)
+; 	at clojure.core$deref.invokeStatic(core.clj:2337)
+; 	at clojure.core$pmap$step__8557$fn__8561.invoke(core.clj:7092)
+; 	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+; 	at clojure.lang.LazySeq.seq(LazySeq.java:51)
+; 	at clojure.lang.RT.seq(RT.java:535)
+; 	at clojure.core$seq__5467.invokeStatic(core.clj:139)
+; 	at clojure.core$map$fn__5939.invoke(core.clj:2774)
+; 	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+; 	at clojure.lang.LazySeq.seq(LazySeq.java:51)
+; 	at clojure.lang.Cons.next(Cons.java:39)
+; 	at clojure.lang.RT.next(RT.java:713)
+; 	at clojure.core$next__5451.invokeStatic(core.clj:64)
+; 	at clojure.core.protocols$fn__8249.invokeStatic(protocols.clj:169)
+; 	at clojure.core.protocols$fn__8249.invoke(protocols.clj:124)
+; 	at clojure.core.protocols$fn__8204$G__8199__8213.invoke(protocols.clj:19)
+; 	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
+; 	at clojure.core.protocols$fn__8236.invokeStatic(protocols.clj:75)
+; 	at clojure.core.protocols$fn__8236.invoke(protocols.clj:75)
+; 	at clojure.core.protocols$fn__8178$G__8173__8191.invoke(protocols.clj:13)
+; 	at clojure.core$reduce.invokeStatic(core.clj:6886)
+; 	at clojure.core$into.invokeStatic(core.clj:6958)
+; 	at clojure.core$mapv.invokeStatic(core.clj:6970)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$flag_duplicates.invokeStatic(analyzer.clj:233)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_stacktrace_data.invokeStatic(analyzer.clj:348)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_cause.invokeStatic(analyzer.clj:382)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_causes$fn__5317.invoke(analyzer.clj:402)
+; 	at clojure.core$map$fn__5931$fn__5932.invoke(core.clj:2759)
+; 	at clojure.lang.PersistentVector.reduce(PersistentVector.java:343)
+; 	at clojure.core$transduce.invokeStatic(core.clj:6946)
+; 	at clojure.core$into.invokeStatic(core.clj:6962)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_causes.invokeStatic(analyzer.clj:406)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze.invokeStatic(analyzer.clj:419)
+; 	at cider.nrepl.middleware.stacktrace$analyze_last_stacktrace.invokeStatic(stacktrace.clj:37)
+; 	at cider.nrepl.middleware.stacktrace$handle_analyze_last_stacktrace_op.invokeStatic(stacktrace.clj:44)
+; 	at cider.nrepl.middleware.stacktrace$handle_stacktrace_op.invokeStatic(stacktrace.clj:68)
+; 	at cider.nrepl.middleware.stacktrace$handle_stacktrace.invokeStatic(stacktrace.clj:93)
+; 	at cider.nrepl.middleware.stacktrace$handle_stacktrace.invoke(stacktrace.clj:90)
+; 	at clojure.lang.Var.invoke(Var.java:388)
+; 	at cider.nrepl$wrap_stacktrace$fn__5866.invoke(nrepl.clj:688)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_trace$fn__5882.invoke(nrepl.clj:773)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_refresh$fn__5816.invoke(nrepl.clj:616)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.interruptible_eval$interruptible_eval$fn__1385.invoke(interruptible_eval.clj:154)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.load_file$wrap_load_file$fn__2167.invoke(load_file.clj:81)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_content_type$fn__5594.invoke(nrepl.clj:165)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.sideloader$wrap_sideloader$fn__2248.invoke(sideloader.clj:108)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_out$fn__5768.invoke(nrepl.clj:566)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_inspect$fn__5690.invoke(nrepl.clj:308)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.session$add_stdin$fn__1503.invoke(session.clj:379)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.caught$wrap_caught$fn__1318.invoke(caught.clj:97)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_macroexpand$fn__5715.invoke(nrepl.clj:517)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_complete$fn__5626.invoke(nrepl.clj:201)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.completion$wrap_completion$fn__2135.invoke(completion.clj:58)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_resource$fn__5850.invoke(nrepl.clj:662)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_reload$fn__5842.invoke(nrepl.clj:641)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_clojuredocs$fn__5924.invoke(nrepl.clj:838)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_log$fn__5700.invoke(nrepl.clj:387)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_test$fn__5874.invoke(nrepl.clj:749)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_slurp$fn__5602.invoke(nrepl.clj:179)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_classpath$fn__5618.invoke(nrepl.clj:195)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_ns$fn__5735.invoke(nrepl.clj:530)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at mancala.core$eval6010$fn__6011$fn__6013.invoke(form-init2454453107605074245.clj:1)
+; 	at cider.nrepl$wrap_xref$fn__5916.invoke(nrepl.clj:823)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_profile$fn__5776.invoke(nrepl.clj:575)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_info$fn__5680.invoke(nrepl.clj:287)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_debug$fn__5636.invoke(nrepl.clj:221)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_enlighten$fn__5646.invoke(nrepl.clj:248)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.print$wrap_print$fn__1285.invoke(print.clj:234)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.dynamic_loader$wrap_dynamic_loader$fn__1571.invoke(dynamic_loader.clj:98)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_undef$fn__5898.invoke(nrepl.clj:802)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_tracker$fn__5890.invoke(nrepl.clj:791)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_version$fn__5908.invoke(nrepl.clj:813)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_apropos$fn__5610.invoke(nrepl.clj:187)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.session$session$fn__1488.invoke(session.clj:325)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.server$default_handler$fn__2296.invoke(server.clj:159)
+; 	at nrepl.server$handle_STAR_.invokeStatic(server.clj:26)
+; 	at nrepl.server$handle$fn__2264.invoke(server.clj:43)
+; 	at clojure.core$binding_conveyor_fn$fn__5823.invoke(core.clj:2047)
+; 	at clojure.lang.AFn.call(AFn.java:18)
+; 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+; 	at java.base/java.lang.Thread.run(Thread.java:833)
+; Caused by: java.lang.ExceptionInInitializerError
+; 	at java.base/java.lang.Class.forName0(Native Method)
+; 	at java.base/java.lang.Class.forName(Class.java:488)
+; 	at java.base/java.lang.Class.forName(Class.java:467)
+; 	at clojure.lang.RT.classForName(RT.java:2209)
+; 	at clojure.lang.RT.classForName(RT.java:2218)
+; 	at clojure.lang.Compiler.maybeResolveIn(Compiler.java:7455)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4371)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4360)
+; 	at orchard.java$resolve_class$fn__4785.invoke(java.clj:466)
+; 	at orchard.java$resolve_class.invokeStatic(java.clj:466)
+; 	at orchard.java$resolve_symbol.invokeStatic(java.clj:497)
+; 	at orchard.info$clj_meta.invokeStatic(info.clj:78)
+; 	at orchard.info$info_STAR_.invokeStatic(info.clj:163)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_fn.invokeStatic(analyzer.clj:79)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_fn.invoke(analyzer.clj:70)
+; 	at clojure.core$comp$fn__5876.invoke(core.clj:2586)
+; 	at clojure.core$comp$fn__5876.invoke(core.clj:2586)
+; 	at clojure.core$comp$fn__5876.invoke(core.clj:2586)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_frame.invokeStatic(analyzer.clj:251)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_frame.invoke(analyzer.clj:246)
+; 	at clojure.core$partial$fn__5908.invoke(core.clj:2641)
+; 	at clojure.core$pmap$fn__8552$fn__8553.invoke(core.clj:7089)
+; 	... 6 more
+; Caused by: Syntax error macroexpanding at (mancala/core.clj:79:1).
+; 	at clojure.lang.Compiler.load(Compiler.java:7665)
+; 	at clojure.lang.RT.loadResourceScript(RT.java:381)
+; 	at clojure.lang.RT.loadResourceScript(RT.java:372)
+; 	at clojure.lang.RT.load(RT.java:459)
+; 	at clojure.lang.RT.load(RT.java:424)
+; 	at clojure.core$load$fn__6908.invoke(core.clj:6161)
+; 	at clojure.core$load.invokeStatic(core.clj:6160)
+; 	at clojure.core$load.doInvoke(core.clj:6144)
+; 	at clojure.lang.RestFn.invoke(RestFn.java:408)
+; 	at clojure.lang.Var.invoke(Var.java:384)
+; 	at clojure.lang.Util.loadWithClass(Util.java:251)
+; 	at mancala.core.<clinit>(Unknown Source)
+; 	... 28 more
+; Caused by: java.lang.NumberFormatException: Cannot parse null string
+; 	at java.base/java.lang.Integer.parseInt(Integer.java:630)
+; 	at java.base/java.lang.Integer.parseInt(Integer.java:784)
+; 	at mancala.core$make_move.invokeStatic(core.clj:63)
+; 	at mancala.core$eval10599.invokeStatic(core.clj:79)
+; 	at mancala.core$eval10599.invoke(core.clj:79)
+; 	at clojure.lang.Compiler.eval(Compiler.java:7194)
+; 	at clojure.lang.Compiler.load(Compiler.java:7653)
+; 	... 39 more
+; ERROR: Unhandled REPL handler exception processing message {:op clojuredocs-lookup, :id 1465, :ns mancala.core, :session 5136f72b-603a-4dcb-88d3-affe003e62d0, :sym mancala.core}
+; java.lang.NoClassDefFoundError: Could not initialize class mancala.core
+; 	at java.base/java.lang.Class.forName0(Native Method)
+; 	at java.base/java.lang.Class.forName(Class.java:488)
+; 	at java.base/java.lang.Class.forName(Class.java:467)
+; 	at clojure.lang.RT.classForName(RT.java:2209)
+; 	at clojure.lang.RT.classForName(RT.java:2218)
+; 	at clojure.lang.Compiler.maybeResolveIn(Compiler.java:7455)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4371)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4360)
+; 	at orchard.clojuredocs$try_ns_resolve.invokeStatic(clojuredocs.clj:117)
+; 	at orchard.clojuredocs$resolve_and_find_doc.invokeStatic(clojuredocs.clj:128)
+; 	at cider.nrepl.middleware.clojuredocs$clojuredocs_lookup_reply.invokeStatic(clojuredocs.clj:10)
+; 	at cider.nrepl.middleware.clojuredocs$clojuredocs_lookup_reply.invoke(clojuredocs.clj:10)
+; 	at cider.nrepl.middleware.util.error_handling$eval6871$fn__6872.invoke(error_handling.clj:160)
+; 	at clojure.lang.MultiFn.invoke(MultiFn.java:234)
+; 	at cider.nrepl.middleware.clojuredocs$handle_clojuredocs.invokeStatic(clojuredocs.clj:28)
+; 	at cider.nrepl.middleware.clojuredocs$handle_clojuredocs.invoke(clojuredocs.clj:27)
+; 	at clojure.lang.Var.invoke(Var.java:388)
+; 	at cider.nrepl$wrap_clojuredocs$fn__5924.invoke(nrepl.clj:838)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_log$fn__5700.invoke(nrepl.clj:387)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_test$fn__5874.invoke(nrepl.clj:749)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_slurp$fn__5602.invoke(nrepl.clj:179)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_classpath$fn__5618.invoke(nrepl.clj:195)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_ns$fn__5735.invoke(nrepl.clj:530)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at mancala.core$eval6010$fn__6011$fn__6013.invoke(form-init2454453107605074245.clj:1)
+; 	at cider.nrepl$wrap_xref$fn__5916.invoke(nrepl.clj:823)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_profile$fn__5776.invoke(nrepl.clj:575)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_info$fn__5680.invoke(nrepl.clj:287)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_debug$fn__5636.invoke(nrepl.clj:221)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_enlighten$fn__5646.invoke(nrepl.clj:248)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.print$wrap_print$fn__1285.invoke(print.clj:234)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.dynamic_loader$wrap_dynamic_loader$fn__1571.invoke(dynamic_loader.clj:98)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_undef$fn__5898.invoke(nrepl.clj:802)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_tracker$fn__5890.invoke(nrepl.clj:791)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_version$fn__5908.invoke(nrepl.clj:813)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_apropos$fn__5610.invoke(nrepl.clj:187)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.session$session$fn__1488.invoke(session.clj:325)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.server$default_handler$fn__2296.invoke(server.clj:159)
+; 	at nrepl.server$handle_STAR_.invokeStatic(server.clj:26)
+; 	at nrepl.server$handle$fn__2264.invoke(server.clj:43)
+; 	at clojure.core$binding_conveyor_fn$fn__5823.invoke(core.clj:2047)
+; 	at clojure.lang.AFn.call(AFn.java:18)
+; 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+; 	at java.base/java.lang.Thread.run(Thread.java:833)
+; Caused by: java.lang.ExceptionInInitializerError: Exception clojure.lang.Compiler$CompilerException: Syntax error macroexpanding at (mancala/core.clj:79:1). [in thread "clojure-agent-send-off-pool-36"]
+; 	at clojure.lang.Compiler.load(Compiler.java:7665)
+; 	at clojure.lang.RT.loadResourceScript(RT.java:381)
+; 	at clojure.lang.RT.loadResourceScript(RT.java:372)
+; 	at clojure.lang.RT.load(RT.java:459)
+; 	at clojure.lang.RT.load(RT.java:424)
+; 	at clojure.core$load$fn__6908.invoke(core.clj:6161)
+; 	at clojure.core$load.invokeStatic(core.clj:6160)
+; 	at clojure.core$load.doInvoke(core.clj:6144)
+; 	at clojure.lang.RestFn.invoke(RestFn.java:408)
+; 	at clojure.lang.Var.invoke(Var.java:384)
+; 	at clojure.lang.Util.loadWithClass(Util.java:251)
+; 	at mancala.core.<clinit>(Unknown Source)
+; 	at java.base/java.lang.Class.forName0(Native Method)
+; 	at java.base/java.lang.Class.forName(Class.java:488)
+; 	at java.base/java.lang.Class.forName(Class.java:467)
+; 	at clojure.lang.RT.classForName(RT.java:2209)
+; 	at clojure.lang.RT.classForName(RT.java:2218)
+; 	at clojure.lang.Compiler.maybeResolveIn(Compiler.java:7455)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4371)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4360)
+; 	at orchard.java$resolve_class$fn__4785.invoke(java.clj:466)
+; 	at orchard.java$resolve_class.invokeStatic(java.clj:466)
+; 	at orchard.java$resolve_symbol.invokeStatic(java.clj:497)
+; 	at orchard.info$clj_meta.invokeStatic(info.clj:78)
+; 	at orchard.info$info_STAR_.invokeStatic(info.clj:163)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_fn.invokeStatic(analyzer.clj:79)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_fn.invoke(analyzer.clj:70)
+; 	at clojure.core$comp$fn__5876.invoke(core.clj:2586)
+; 	at clojure.core$comp$fn__5876.invoke(core.clj:2586)
+; 	at clojure.core$comp$fn__5876.invoke(core.clj:2586)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_frame.invokeStatic(analyzer.clj:251)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_frame.invoke(analyzer.clj:246)
+; 	at clojure.core$partial$fn__5908.invoke(core.clj:2641)
+; 	at clojure.core$pmap$fn__8552$fn__8553.invoke(core.clj:7089)
+; 	... 6 more
+; ERROR: Unhandled REPL handler exception processing message {:op clojuredocs-lookup, :id 1466, :ns mancala.core, :session 5136f72b-603a-4dcb-88d3-affe003e62d0, :sym mancala.core}
+; java.lang.NoClassDefFoundError: Could not initialize class mancala.core
+; 	at java.base/java.lang.Class.forName0(Native Method)
+; 	at java.base/java.lang.Class.forName(Class.java:488)
+; 	at java.base/java.lang.Class.forName(Class.java:467)
+; 	at clojure.lang.RT.classForName(RT.java:2209)
+; 	at clojure.lang.RT.classForName(RT.java:2218)
+; 	at clojure.lang.Compiler.maybeResolveIn(Compiler.java:7455)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4371)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4360)
+; 	at orchard.clojuredocs$try_ns_resolve.invokeStatic(clojuredocs.clj:117)
+; 	at orchard.clojuredocs$resolve_and_find_doc.invokeStatic(clojuredocs.clj:128)
+; 	at cider.nrepl.middleware.clojuredocs$clojuredocs_lookup_reply.invokeStatic(clojuredocs.clj:10)
+; 	at cider.nrepl.middleware.clojuredocs$clojuredocs_lookup_reply.invoke(clojuredocs.clj:10)
+; 	at cider.nrepl.middleware.util.error_handling$eval6871$fn__6872.invoke(error_handling.clj:160)
+; 	at clojure.lang.MultiFn.invoke(MultiFn.java:234)
+; 	at cider.nrepl.middleware.clojuredocs$handle_clojuredocs.invokeStatic(clojuredocs.clj:28)
+; 	at cider.nrepl.middleware.clojuredocs$handle_clojuredocs.invoke(clojuredocs.clj:27)
+; 	at clojure.lang.Var.invoke(Var.java:388)
+; 	at cider.nrepl$wrap_clojuredocs$fn__5924.invoke(nrepl.clj:838)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_log$fn__5700.invoke(nrepl.clj:387)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_test$fn__5874.invoke(nrepl.clj:749)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_slurp$fn__5602.invoke(nrepl.clj:179)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_classpath$fn__5618.invoke(nrepl.clj:195)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_ns$fn__5735.invoke(nrepl.clj:530)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at mancala.core$eval6010$fn__6011$fn__6013.invoke(form-init2454453107605074245.clj:1)
+; 	at cider.nrepl$wrap_xref$fn__5916.invoke(nrepl.clj:823)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_profile$fn__5776.invoke(nrepl.clj:575)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_info$fn__5680.invoke(nrepl.clj:287)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_debug$fn__5636.invoke(nrepl.clj:221)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_enlighten$fn__5646.invoke(nrepl.clj:248)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.print$wrap_print$fn__1285.invoke(print.clj:234)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.dynamic_loader$wrap_dynamic_loader$fn__1571.invoke(dynamic_loader.clj:98)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_undef$fn__5898.invoke(nrepl.clj:802)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_tracker$fn__5890.invoke(nrepl.clj:791)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_version$fn__5908.invoke(nrepl.clj:813)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_apropos$fn__5610.invoke(nrepl.clj:187)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.session$session$fn__1488.invoke(session.clj:325)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.server$default_handler$fn__2296.invoke(server.clj:159)
+; 	at nrepl.server$handle_STAR_.invokeStatic(server.clj:26)
+; 	at nrepl.server$handle$fn__2264.invoke(server.clj:43)
+; 	at clojure.core$binding_conveyor_fn$fn__5823.invoke(core.clj:2047)
+; 	at clojure.lang.AFn.call(AFn.java:18)
+; 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+; 	at java.base/java.lang.Thread.run(Thread.java:833)
+; Caused by: java.lang.ExceptionInInitializerError: Exception clojure.lang.Compiler$CompilerException: Syntax error macroexpanding at (mancala/core.clj:79:1). [in thread "clojure-agent-send-off-pool-36"]
+; 	at clojure.lang.Compiler.load(Compiler.java:7665)
+; 	at clojure.lang.RT.loadResourceScript(RT.java:381)
+; 	at clojure.lang.RT.loadResourceScript(RT.java:372)
+; 	at clojure.lang.RT.load(RT.java:459)
+; 	at clojure.lang.RT.load(RT.java:424)
+; 	at clojure.core$load$fn__6908.invoke(core.clj:6161)
+; 	at clojure.core$load.invokeStatic(core.clj:6160)
+; 	at clojure.core$load.doInvoke(core.clj:6144)
+; 	at clojure.lang.RestFn.invoke(RestFn.java:408)
+; 	at clojure.lang.Var.invoke(Var.java:384)
+; 	at clojure.lang.Util.loadWithClass(Util.java:251)
+; 	at mancala.core.<clinit>(Unknown Source)
+; 	at java.base/java.lang.Class.forName0(Native Method)
+; 	at java.base/java.lang.Class.forName(Class.java:488)
+; 	at java.base/java.lang.Class.forName(Class.java:467)
+; 	at clojure.lang.RT.classForName(RT.java:2209)
+; 	at clojure.lang.RT.classForName(RT.java:2218)
+; 	at clojure.lang.Compiler.maybeResolveIn(Compiler.java:7455)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4371)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4360)
+; 	at orchard.java$resolve_class$fn__4785.invoke(java.clj:466)
+; 	at orchard.java$resolve_class.invokeStatic(java.clj:466)
+; 	at orchard.java$resolve_symbol.invokeStatic(java.clj:497)
+; 	at orchard.info$clj_meta.invokeStatic(info.clj:78)
+; 	at orchard.info$info_STAR_.invokeStatic(info.clj:163)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_fn.invokeStatic(analyzer.clj:79)
+; 	at cider.nrepl.inlined.deps.haystack.v0v3v3.haystack.analyzer$analyze_fn.invonREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\super\Documents\Programming-projects\mancala\mancala & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Using host:port 127.0.0.1:52062 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉mancala.core꞉> 
+; Jack-in done.
+clj꞉mancala.core꞉> 
+;    0 [3 3 3 3 3 3]
+; >    [3 3 3 3 3 3] 0
+nil
+clj꞉mancala.core꞉> 
+;    0 [3 3 3 3 3 3]
+; >    [3 3 3 3 3 3] 0
+; Where to move from?
+; Moving from 4
+; >  0 [3 3 3 3 3 4]
+;      [3 3 3 3 0 4] 1
+; Where to move from?
+; Moving from 6
+;    0 [3 3 3 3 3 5]
+; >    [3 3 3 3 0 4] 0
+; Where to move from?
+; Moving from 4
+; >  0 [3 3 3 3 3 5]
+;      [3 3 3 3 0 4] 0
+nil
+clj꞉mancala.core꞉> 
+; 1 2 3
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+nil
+clj꞉mancala.core꞉> 
+(1 2 3 4 5)
+clj꞉mancala.core꞉> 
+15
+clj꞉mancala.core꞉> 
+120
+clj꞉mancala.core꞉> 
+1
+clj꞉mancala.core꞉> 
+false
+clj꞉mancala.core꞉> 
+#'mancala.core/scoring-wells
+clj꞉mancala.core꞉> 
+{6 0, 13 1}
+clj꞉mancala.core꞉> 
+true
+clj꞉mancala.core꞉> 
+false
+clj꞉mancala.core꞉> 
+#'mancala.core/start-state
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+1
+clj꞉mancala.core꞉> 
+{:board [3 3 3 3 3 3 0 3 3 3 3 3 3 0], :player 0}
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; ERROR: Unhandled REPL handler exception processing message {:op info, :ns mancala.core, :symbol mancala.core, :id 969, :session c4ea21f2-b1fb-46ff-a5b5-4871c58617aa}
+; java.lang.ExceptionInInitializerError
+; 	at java.base/java.lang.Class.forName0(Native Method)
+; 	at java.base/java.lang.Class.forName(Class.java:488)
+; 	at java.base/java.lang.Class.forName(Class.java:467)
+; 	at clojure.lang.RT.classForName(RT.java:2209)
+; 	at clojure.lang.RT.classForName(RT.java:2218)
+; 	at clojure.lang.Compiler.maybeResolveIn(Compiler.java:7455)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4371)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4360)
+; 	at orchard.meta$resolve_var.invokeStatic(meta.clj:100)
+; 	at orchard.info$clj_meta.invokeStatic(info.clj:76)
+; 	at orchard.info$info_STAR_.invokeStatic(info.clj:163)
+; 	at cider.nrepl.middleware.info$info.invokeStatic(info.clj:122)
+; 	at cider.nrepl.middleware.info$info_reply.invokeStatic(info.clj:125)
+; 	at cider.nrepl.middleware.info$info_reply.invoke(info.clj:125)
+; 	at cider.nrepl.middleware.util.error_handling$eval6102$fn__6103.invoke(error_handling.clj:160)
+; 	at clojure.lang.MultiFn.invoke(MultiFn.java:234)
+; 	at cider.nrepl.middleware.info$handle_info.invokeStatic(info.clj:147)
+; 	at cider.nrepl.middleware.info$handle_info.invoke(info.clj:146)
+; 	at clojure.lang.Var.invoke(Var.java:388)
+; 	at cider.nrepl$wrap_info$fn__5671.invoke(nrepl.clj:287)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_profile$fn__5757.invoke(nrepl.clj:575)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_ns$fn__5718.invoke(nrepl.clj:530)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_stacktrace$fn__5866.invoke(nrepl.clj:688)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_clojuredocs$fn__5924.invoke(nrepl.clj:838)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_macroexpand$fn__5708.invoke(nrepl.clj:517)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_log$fn__5698.invoke(nrepl.clj:387)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.interruptible_eval$interruptible_eval$fn__1385.invoke(interruptible_eval.clj:154)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_out$fn__5739.invoke(nrepl.clj:566)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_debug$fn__5636.invoke(nrepl.clj:221)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_enlighten$fn__5644.invoke(nrepl.clj:248)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.session$add_stdin$fn__1503.invoke(session.clj:379)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.sideloader$wrap_sideloader$fn__2248.invoke(sideloader.clj:108)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.load_file$wrap_load_file$fn__2167.invoke(load_file.clj:81)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_content_type$fn__5594.invoke(nrepl.clj:165)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at mancala.core$eval6010$fn__6011$fn__6013.invoke(form-init18044539244464658433.clj:1)
+; 	at nrepl.middleware.dynamic_loader$wrap_dynamic_loader$fn__1571.invoke(dynamic_loader.clj:98)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_version$fn__5908.invoke(nrepl.clj:813)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.completion$wrap_completion$fn__2135.invoke(completion.clj:58)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_refresh$fn__5779.invoke(nrepl.clj:616)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_tracker$fn__5890.invoke(nrepl.clj:791)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_inspect$fn__5690.invoke(nrepl.clj:308)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.caught$wrap_caught$fn__1318.invoke(caught.clj:97)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.session$session$fn__1488.invoke(session.clj:325)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.print$wrap_print$fn__1285.invoke(print.clj:234)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.server$default_handler$fn__2296.invoke(server.clj:159)
+; 	at nrepl.server$handle_STAR_.invokeStatic(server.clj:26)
+; 	at nrepl.server$handle$fn__2264.invoke(server.clj:43)
+; 	at clojure.core$binding_conveyor_fn$fn__5823.invoke(core.clj:2047)
+; 	at clojure.lang.AFn.call(AFn.java:18)
+; 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+; 	at java.base/java.lang.Thread.run(Thread.java:833)
+; Caused by: Syntax error macroexpanding at (mancala/core.clj:77:1).
+; 	at clojure.lang.Compiler.load(Compiler.java:7665)
+; 	at clojure.lang.RT.loadResourceScript(RT.java:381)
+; 	at clojure.lang.RT.loadResourceScript(RT.java:372)
+; 	at clojure.lang.RT.load(RT.java:459)
+; 	at clojure.lang.RT.load(RT.java:424)
+; 	at clojure.core$load$fn__6908.invoke(core.clj:6161)
+; 	at clojure.core$load.invokeStatic(core.clj:6160)
+; 	at clojure.core$load.doInvoke(core.clj:6144)
+; 	at clojure.lang.RestFn.invoke(RestFn.java:408)
+; 	at clojure.lang.Var.invoke(Var.java:384)
+; 	at clojure.lang.Util.loadWithClass(Util.java:251)
+; 	at mancala.core.<clinit>(Unknown Source)
+; 	... 77 more
+; Caused by: java.lang.NumberFormatException: Cannot parse null string
+; 	at java.base/java.lang.Integer.parseInt(Integer.java:630)
+; 	at java.base/java.lang.Integer.parseInt(Integer.java:784)
+; 	at mancala.core$make_move.invokeStatic(core.clj:61)
+; 	at mancala.core$make_move.invoke(core.clj:58)
+; 	at mancala.core$print_then_apply.invokeStatic(core.clj:71)
+; 	at mancala.core$eval10384.invokeStatic(core.clj:77)
+; 	at mancala.core$eval10384.invoke(core.clj:77)
+; 	at clojure.lang.Compiler.eval(Compiler.java:7194)
+; 	at clojure.lang.Compiler.load(Compiler.java:7653)
+; 	... 88 more
+; ERROR: Unhandled REPL handler exception processing message {:op clojuredocs-lookup, :id 971, :ns mancala.core, :session c4ea21f2-b1fb-46ff-a5b5-4871c58617aa, :sym mancala.core}
+; java.lang.NoClassDefFoundError: Could not initialize class mancala.core
+; 	at java.base/java.lang.Class.forName0(Native Method)
+; 	at java.base/java.lang.Class.forName(Class.java:488)
+; 	at java.base/java.lang.Class.forName(Class.java:467)
+; 	at clojure.lang.RT.classForName(RT.java:2209)
+; 	at clojure.lang.RT.classForName(RT.java:2218)
+; 	at clojure.lang.Compiler.maybeResolveIn(Compiler.java:7455)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4371)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4360)
+; 	at orchard.clojuredocs$try_ns_resolve.invokeStatic(clojuredocs.clj:117)
+; 	at orchard.clojuredocs$resolve_and_find_doc.invokeStatic(clojuredocs.clj:128)
+; 	at cider.nrepl.middleware.clojuredocs$clojuredocs_lookup_reply.invokeStatic(clojuredocs.clj:10)
+; 	at cider.nrepl.middleware.clojuredocs$clojuredocs_lookup_reply.invoke(clojuredocs.clj:10)
+; 	at cider.nrepl.middleware.util.error_handling$eval6102$fn__6103.invoke(error_handling.clj:160)
+; 	at clojure.lang.MultiFn.invoke(MultiFn.java:234)
+; 	at cider.nrepl.middleware.clojuredocs$handle_clojuredocs.invokeStatic(clojuredocs.clj:28)
+; 	at cider.nrepl.middleware.clojuredocs$handle_clojuredocs.invoke(clojuredocs.clj:27)
+; 	at clojure.lang.Var.invoke(Var.java:388)
+; 	at cider.nrepl$wrap_clojuredocs$fn__5924.invoke(nrepl.clj:838)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_macroexpand$fn__5708.invoke(nrepl.clj:517)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_log$fn__5698.invoke(nrepl.clj:387)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.interruptible_eval$interruptible_eval$fn__1385.invoke(interruptible_eval.clj:154)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_out$fn__5739.invoke(nrepl.clj:566)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_debug$fn__5636.invoke(nrepl.clj:221)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_enlighten$fn__5644.invoke(nrepl.clj:248)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.session$add_stdin$fn__1503.invoke(session.clj:379)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.sideloader$wrap_sideloader$fn__2248.invoke(sideloader.clj:108)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.load_file$wrap_load_file$fn__2167.invoke(load_file.clj:81)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_content_type$fn__5594.invoke(nrepl.clj:165)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at mancala.core$eval6010$fn__6011$fn__6013.invoke(form-init18044539244464658433.clj:1)
+; 	at nrepl.middleware.dynamic_loader$wrap_dynamic_loader$fn__1571.invoke(dynamic_loader.clj:98)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_version$fn__5908.invoke(nrepl.clj:813)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.completion$wrap_completion$fn__2135.invoke(completion.clj:58)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_refresh$fn__5779.invoke(nrepl.clj:616)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_tracker$fn__5890.invoke(nrepl.clj:791)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_inspect$fn__5690.invoke(nrepl.clj:308)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.caught$wrap_caught$fn__1318.invoke(caught.clj:97)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.session$session$fn__1488.invoke(session.clj:325)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.middleware.print$wrap_print$fn__1285.invoke(print.clj:234)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at nrepl.server$default_handler$fn__2296.invoke(server.clj:159)
+; 	at nrepl.server$handle_STAR_.invokeStatic(server.clj:26)
+; 	at nrepl.server$handle$fn__2264.invoke(server.clj:43)
+; 	at clojure.core$binding_conveyor_fn$fn__5823.invoke(core.clj:2047)
+; 	at clojure.lang.AFn.call(AFn.java:18)
+; 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+; 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+; 	at java.base/java.lang.Thread.run(Thread.java:833)
+; Caused by: java.lang.ExceptionInInitializerError: Exception clojure.lang.Compiler$CompilerException: Syntax error macroexpanding at (mancala/core.clj:77:1). [in thread "clojure-agent-send-off-pool-26"]
+; 	at clojure.lang.Compiler.load(Compiler.java:7665)
+; 	at clojure.lang.RT.loadResourceScript(RT.java:381)
+; 	at clojure.lang.RT.loadResourceScript(RT.java:372)
+; 	at clojure.lang.RT.load(RT.java:459)
+; 	at clojure.lang.RT.load(RT.java:424)
+; 	at clojure.core$load$fn__6908.invoke(core.clj:6161)
+; 	at clojure.core$load.invokeStatic(core.clj:6160)
+; 	at clojure.core$load.doInvoke(core.clj:6144)
+; 	at clojure.lang.RestFn.invoke(RestFn.java:408)
+; 	at clojure.lang.Var.invoke(Var.java:384)
+; 	at clojure.lang.Util.loadWithClass(Util.java:251)
+; 	at mancala.core.<clinit>(Unknown Source)
+; 	at java.base/java.lang.Class.forName0(Native Method)
+; 	at java.base/java.lang.Class.forName(Class.java:488)
+; 	at java.base/java.lang.Class.forName(Class.java:467)
+; 	at clojure.lang.RT.classForName(RT.java:2209)
+; 	at clojure.lang.RT.classForName(RT.java:2218)
+; 	at clojure.lang.Compiler.maybeResolveIn(Compiler.java:7455)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4371)
+; 	at clojure.core$ns_resolve.invokeStatic(core.clj:4360)
+; 	at orchard.meta$resolve_var.invokeStatic(meta.clj:100)
+; 	at orchard.info$clj_meta.invokeStatic(info.clj:76)
+; 	at orchard.info$info_STAR_.invokeStatic(info.clj:163)
+; 	at cider.nrepl.middleware.info$info.invokeStatic(info.clj:122)
+; 	at cider.nrepl.middleware.info$info_reply.invokeStatic(info.clj:125)
+; 	at cider.nrepl.middleware.info$info_reply.invoke(info.clj:125)
+; 	at cider.nrepl.middleware.util.error_handling$eval6102$fn__6103.invoke(error_handling.clj:160)
+; 	at clojure.lang.MultiFn.invoke(MultiFn.java:234)
+; 	at cider.nrepl.middleware.info$handle_info.invokeStatic(info.clj:147)
+; 	at cider.nrepl.middleware.info$handle_info.invoke(info.clj:146)
+; 	at clojure.lang.Var.invoke(Var.java:388)
+; 	at cider.nrepl$wrap_info$fn__5671.invoke(nrepl.clj:287)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_profile$fn__5757.invoke(nrepl.clj:575)
+; 	at nrepl.middleware$wrap_conj_descriptor$fn__1049.invoke(middleware.clj:16)
+; 	at cider.nrepl$wrap_ns$fn__5718.invoke(nrepl.clj:530)
+; 	at nrepl.middleware$wrap_conj_descrinREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\super\Documents\Programming-projects\mancala\mancala & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\super\Documents\Programming-projects\mancala\mancala & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Using host:port 127.0.0.1:54560 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉mancala.core꞉> 
+; Jack-in done.
+clj꞉mancala.core꞉> 
+; Syntax error compiling at (c:\Users\super\Documents\Programming-projects\mancala\mancala\src\mancala\core.clj:83:1).
+; Unable to resolve symbol: run-game in this context
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+{:board [3 3 3 3 3 3 0 3 3 3 3 3 3 0], :player 0}
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+{:board [3 3 3 3 3 3 0 3 3 3 3 3 3 0], :player 0}
+clj꞉mancala.core꞉> 
+#'mancala.core/game-over?
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+{:board [3 3 3 3 3 3 0 3 3 3 3 3 3 0], :player 0}
+clj꞉mancala.core꞉> 
+true
+clj꞉mancala.core꞉> 
+#'mancala.core/game-over?
+clj꞉mancala.core꞉> 
+true
+clj꞉mancala.core꞉> 
+[3 3 3 3 3 3 0 3 3 3 3 3 3 0]
+clj꞉mancala.core꞉> 
+nil
+clj꞉mancala.core꞉> 
+nil
+clj꞉mancala.core꞉> 
+nil
+clj꞉mancala.core꞉> 
+[3 3 3 3 3 3 0 3 3 3 3 3 3 0]
+clj꞉mancala.core꞉> 
+0
+clj꞉mancala.core꞉> 
+[3 3 3 3 3 3]
+clj꞉mancala.core꞉> 
+#'mancala.core/game-over?
+clj꞉mancala.core꞉> 
+false
+clj꞉mancala.core꞉> 
+{:board [3 3 3 3 3 3 0 3 3 3 3 3 3 0], :player 0}
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+; Where to move from?
+; Moving from 5
+; Where to move from?
+; Moving from 4
+; Where to move from?
+; Moving from 4
+; Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 3
+; >   0  [3 3 3 3 3 3]
+;        [3 3 3 0 4 4]   1
+; Where to move from?
+; Moving from 10
+;     1  [4 4 0 3 3 3]
+; >      [3 3 3 0 4 4]   1
+; Where to move from?
+; Moving from 5
+; >   1  [4 4 0 4 4 4]
+;        [3 3 3 0 4 0]   2
+; Where to move from?
+; Moving from 12
+;     2  [0 4 0 4 4 4]
+; >      [4 4 4 0 4 0]   2
+; Where to move from?
+; Moving from 4
+; >   2  [0 4 0 4 5 5]
+;        [4 4 4 0 0 1]   3
+; Where to move from?
+; Moving from 5
+;     2  [0 4 0 4 5 6]
+; >      [4 4 4 0 0 0]   3
+; Where to move from?
+; Moving from 0
+; >   2  [0 4 0 4 5 6]
+;        [0 5 5 1 1 0]   3
+; Where to move from?
+; Moving from 1
+;     2  [0 4 0 4 5 7]
+; >      [0 0 6 2 2 1]   3
+; Where to move from?
+; Moving from 2
+; >   2  [0 4 0 4 6 8]
+;        [0 0 0 3 3 2]   4
+; Where to move from?
+; Moving from 3
+;     2  [0 4 0 4 6 9]
+; >      [0 0 0 0 4 3]   4
+; Where to move from?
+; Moving from 4
+; >   2  [0 4 0 4 7 10]
+;        [0 0 0 0 0 4]   5
+; Where to move from?
+; Moving from 5
+;     2  [0 4 1 5 8 11]
+; >      [0 0 0 0 0 0]   5
+{:board [0 0 0 0 0 0 5 11 8 5 1 4 0 2], :player 0, :in-hand 0, :pos 11}
+clj꞉mancala.core꞉> 
