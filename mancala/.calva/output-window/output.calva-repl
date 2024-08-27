@@ -1315,3 +1315,715 @@ clj꞉mancala.core꞉> 
 ; >      [0 0 0 0 0 0]   5
 {:board [0 0 0 0 0 0 5 11 8 5 1 4 0 2], :player 0, :in-hand 0, :pos 11}
 clj꞉mancala.core꞉> 
+; ERROR: Unhandled REPL handler exception processing message {:op stacktrace, :id 734, :session 919c557d-0e2c-45cb-90b7-928f7b96f24f}
+; java.util.concurrent.ExecutionException: java.lang.ExceptionInInitializerError
+; 	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+; 	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+; 	at clojure.core$deref_future.invokeStatic(core.clj:2317)
+; 	at clojure.core$future_call$reify__8544.deref(core.clj:7041)
+; 	at clojure.core$deref.invokeStatic(core.clj:2337)
+; 	at clojure.core$pmap$step__8557$fn__8561.invoke(core.clj:7092)
+; 	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+; 	at clojure.lang.LazySeq.seq(LazySeq.java:51)
+; 	at clojure.lang.RT.seq(RT.java:535)
+; 	at clojure.core$seq__5467.invokeStatic(core.clj:139)
+; 	at clojure.core$map$fn__5939.invoke(core.clj:2774)
+; 	at clojure.lang.LazySeq.sval(LazySeq.java:42)
+; 	at clojure.lang.LazySeq.seq(LazySeq.java:51)
+; 	at clojure.lang.Cons.next(Cons.java:39)
+; 	at clojure.lang.RT.next(RT.java:713)
+; 	at clojure.core$next__5451.invokeStatic(core.clj:64)
+; 	at clojure.core.protocols$fn__8249.invokeStatic(protocols.clj:169)
+; 	at clojure.core.nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\super\Documents\Programming-projects\mancala\mancala & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\super\Documents\Programming-projects\mancala\mancala & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Using host:port 127.0.0.1:56887 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉mancala.core꞉> 
+; Jack-in done.
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 0
+; >   0  [3 3 3 3 3 3]
+;        [0 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 1
+;     0  [3 3 3 3 3 3]
+; >      [0 0 3 3 3 3]   0
+; Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 0
+; >   0  [3 3 3 3 3 3]
+;        [0 3 3 3 3 3]   0
+; Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 0
+; Execution error (NullPointerException) at mancala.core/make-move (form-init12469972811808522010.clj:76).
+; Cannot invoke "clojure.lang.IFn.invoke(Object)" because the return value of "clojure.lang.Var.getRawRoot()" is null
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 1
+; >   0  [3 3 3 3 3 3]
+;        [3 0 4 4 4 3]   0
+; Where to move from?
+; Moving from 2
+;     0  [3 3 3 3 3 4]
+; >      [3 0 0 5 5 4]   0
+; Where to move from?
+; Moving from 3
+; >   0  [3 3 3 3 4 5]
+;        [3 0 0 0 6 5]   1
+; Where to move from?
+; Moving from 4
+;     0  [3 4 4 4 5 6]
+; >      [3 0 0 0 0 6]   1
+; Where to move from?
+; Moving from 5
+; >   0  [3 5 5 5 6 7]
+;        [3 0 0 0 0 0]   2
+; Where to move from?
+; Moving from 13
+;     0  [3 5 5 5 6 7]
+; >      [3 0 0 0 0 0]   2
+; Where to move from?
+; Moving from 0
+; >   0  [3 5 5 5 6 7]
+;        [0 1 1 1 0 0]   2
+; Where to move from?
+; Moving from 12
+;     1  [0 5 5 5 6 7]
+; >      [1 2 1 1 0 0]   2
+; Where to move from?
+; Moving from 3
+; >   1  [0 5 5 5 6 7]
+;        [1 2 1 0 1 0]   2
+; Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 0
+; Cascade!
+;     0  [3 3 3 3 3 3]
+; >      [0 4 4 3 3 3]   0
+; Cascade!
+;     0  [3 3 3 3 3 3]
+; >      [0 4 4 0 4 4]   1
+; Cascade!
+;     0  [3 3 4 4 4 0]
+; >      [0 4 4 0 4 4]   1
+; Cascade!
+;     0  [4 0 4 4 4 0]
+; >      [1 5 4 0 4 4]   1
+; >   0  [4 0 4 4 4 1]
+;        [1 5 0 1 5 5]   2
+; Where to move from?
+; Moving from 7
+; Cascade!
+; >   0  [4 0 4 4 4 0]
+;        [1 5 0 1 5 5]   2
+;     1  [5 1 5 5 0 0]
+; >      [1 5 0 1 5 5]   2
+; Where to move from?
+; Moving from 0
+; Cascade!
+;     1  [5 1 5 5 0 0]
+; >      [0 5 0 1 5 5]   2
+; >   1  [5 1 5 5 0 1]
+;        [0 0 1 2 6 6]   3
+; Where to move from?
+; Moving from 11
+; Cascade!
+; >   1  [5 0 5 5 0 1]
+;        [0 0 1 2 6 6]   3
+; Cascade!
+; >   2  [0 0 5 5 0 1]
+;        [1 1 2 3 6 6]   3
+;     2  [1 1 6 6 1 2]
+; >      [1 1 2 3 0 7]   3
+; Where to move from?
+; Moving from 0
+; Cascade!
+;     2  [1 1 6 6 1 2]
+; >      [0 1 2 3 0 7]   3
+; Cascade!
+;     2  [1 1 6 6 1 2]
+; >      [0 0 3 3 0 7]   3
+; Cascade!
+;     2  [1 1 6 6 1 2]
+; >      [0 0 3 0 1 8]   4
+; Cascade!
+;     2  [1 1 6 7 2 0]
+; >      [0 0 3 0 1 8]   4
+; Cascade!
+;     2  [2 2 0 7 2 0]
+; >      [1 1 4 1 1 8]   4
+; Cascade!
+;     2  [2 2 0 7 2 0]
+; >      [1 1 4 1 0 9]   4
+; Cascade!
+;     2  [2 2 1 8 3 1]
+; >      [1 1 4 1 0 9]   0
+; Cascade!
+;     2  [3 0 1 8 3 1]
+; >      [2 1 4 1 0 9]   0
+; Cascade!
+;     2  [3 0 1 8 3 1]
+; >      [2 0 5 1 0 9]   0
+; Cascade!
+;     2  [3 0 1 8 3 1]
+; >      [2 0 5 0 1 9]   0
+; Cascade!
+;     2  [4 1 2 9 4 2]
+; >      [3 1 5 0 1 0]   1
+; Cascade!
+;     2  [4 1 2 9 4 3]
+; >      [3 1 0 1 2 1]   2
+; Cascade!
+;     2  [5 2 3 10 0 3]
+; >      [3 1 0 1 2 1]   2
+; Cascade!
+;     2  [5 2 3 10 0 3]
+; >      [0 2 1 2 2 1]   2
+; Cascade!
+;     2  [5 2 3 10 0 3]
+; >      [0 2 1 2 0 2]   3
+; Cascade!
+;     2  [5 2 4 11 1 0]
+; >      [0 2 1 2 0 2]   3
+; Cascade!
+;     2  [6 0 4 11 1 0]
+; >      [1 2 1 2 0 2]   3
+; >   2  [6 0 4 11 1 0]
+;        [1 0 2 3 1 2]   3
+; Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 0
+; Execution error (MissingFormatArgumentException) at java.util.Formatter/format (Formatter.java:2768).
+; Format specifier '%d'
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 0
+; Cascade! from 3
+;     0  [3 3 3 3 3 3]
+; >      [0 4 4 3 3 3]   0
+; Cascade! from 7
+;     0  [3 3 3 3 3 3]
+; >      [0 4 4 0 4 4]   1
+; Cascade! from 11
+;     0  [3 3 4 4 4 0]
+; >      [0 4 4 0 4 4]   1
+; Cascade! from 2
+;     0  [4 0 4 4 4 0]
+; >      [1 5 4 0 4 4]   1
+; >   0  [4 0 4 4 4 1]
+;        [1 5 0 1 5 5]   2
+; Where to move from?
+; Moving from 9
+; Player 1 Should get another turn (TODO: implement)
+;     1  [5 1 5 0 4 1]
+; >      [1 5 0 1 5 5]   2
+; Where to move from?
+; Moving from 1
+; Player 0 Should get another turn (TODO: implement)
+; >   1  [5 1 5 0 4 1]
+;        [1 0 1 2 6 6]   3
+; Where to move from?
+; Moving from 5
+; Cascade! from 12
+; >   1  [5 2 6 1 5 2]
+;        [1 0 1 2 6 0]   3
+; Cascade! from 4
+; >   2  [0 2 6 1 5 2]
+;        [2 1 2 3 6 0]   3
+;     2  [1 3 7 2 6 3]
+; >      [2 1 2 3 0 1]   3
+; Where to move from?
+; Moving from 5
+; Player 0 Should get another turn (TODO: implement)
+; >   2  [1 3 7 2 6 3]
+;        [2 1 2 3 0 0]   4
+; Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+(def asdf_map {:a 1})
+#'mancala.core/asdf_map
+clj꞉mancala.core꞉> 
+(:a asdf_map)
+1
+clj꞉mancala.core꞉> 
+(:b asdf_map)
+nil
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 0
+; Cascade! from 3
+;     0  [3 3 3 3 3 3]
+; >      [0 4 4 3 3 3]   0
+; Cascade! from 7
+;     0  [3 3 3 3 3 3]
+; >      [0 4 4 0 4 4]   1
+; Cascade! from 11
+;     0  [3 3 4 4 4 0]
+; >      [0 4 4 0 4 4]   1
+; Cascade! from 2
+;     0  [4 0 4 4 4 0]
+; >      [1 5 4 0 4 4]   1
+; >   0  [4 0 4 4 4 1]
+;        [1 5 0 1 5 5]   2
+; Where to move from?
+; Moving from 9
+; Execution error (MissingFormatArgumentException) at java.util.Formatter/format (Formatter.java:2768).
+; Format specifier '%d'
+clj꞉mancala.core꞉> 
+#'mancala.core/propagate-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 3
+; Player 0 Should get another turn (TODO: implement)
+; >   0  [3 3 3 3 3 3]
+;        [3 3 3 0 4 4]   1
+; Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+#'mancala.core/run-game
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/make-move
+clj꞉mancala.core꞉> 
+#'mancala.core/run-game
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 3
+; Player 0 Should get another turn (TODO: implement)
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 0 4 4]   1
+; Where to move from?
+; Moving from 2
+; Cascade! from 5
+;     0  [3 3 3 3 3 3]
+; >      [3 3 0 1 5 4]   1
+; Cascade! from 10
+;     0  [3 3 3 4 4 4]
+; >      [3 3 0 1 5 0]   2
+; Cascade! from 1
+;     0  [4 4 0 4 4 4]
+; >      [4 3 0 1 5 0]   2
+; >   0  [4 4 0 4 4 4]
+;        [4 0 1 2 6 1]   2
+; Where to move from?
+; Moving from 9
+; Player 1 Should get another turn (TODO: implement)
+; >   1  [5 5 1 0 4 4]
+;        [4 0 1 2 6 1]   2
+; Where to move from?
+; Moving from 7
+; Cascade! from 11
+; >   1  [5 5 2 1 5 0]
+;        [4 0 1 2 6 1]   2
+; Cascade! from 3
+; >   2  [6 0 2 1 5 0]
+;        [5 1 2 2 6 1]   2
+;     2  [6 0 2 1 5 1]
+; >      [5 1 2 0 7 2]   2
+; Where to move from?
+; Moving from 8
+; Cascade! from 0
+;     2  [7 1 3 2 0 1]
+; >      [5 1 2 0 7 2]   2
+; Player 0 Should get another turn (TODO: implement)
+;     2  [7 1 3 2 0 1]
+; >      [0 2 3 1 8 3]   3
+; Where to move from?; Moving from 4
+; Cascade! from 12
+;     2  [7 2 4 3 1 2]
+; >      [0 2 3 1 0 4]   4
+; Cascade! from 7
+;     2  [0 2 4 3 1 2]
+; >      [1 3 4 2 1 5]   5
+; Cascade! from 10
+;     2  [0 2 4 4 2 0]
+; >      [1 3 4 2 1 5]   5
+; Cascade! from 2
+;     2  [1 3 0 4 2 0]
+; >      [2 4 4 2 1 5]   5
+; >   2  [1 3 0 4 2 1]
+;        [2 4 0 3 2 6]   6
+; Where to move from?
+; Sending interrupt.; Evaluation was interrupted
+clj꞉mancala.core꞉> 
+Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+#'mancala.core/step
+clj꞉mancala.core꞉> 
+#'mancala.core/step
+clj꞉mancala.core꞉> 
+#'mancala.core/step-forward
+clj꞉mancala.core꞉> 
+#'mancala.core/print-state
+clj꞉mancala.core꞉> 
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\super\Documents\Programming-projects\mancala\mancala & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Using host:port 127.0.0.1:63665 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉mancala.core꞉> 
+; Jack-in done.
+clj꞉mancala.core꞉> 
+;     0  [3 3 3 3 3 3]
+; >      [3 3 3 3 3 3]   0
+; Where to move from?
+; Moving from 1
+; Cascade! from 4
+;     0  [3 3 3 3 3 3]
+; >      [3 0 4 4 3 3]   0
+; Cascade! from 8
+;     0  [3 3 3 3 3 4]
+; >      [3 0 4 4 0 4]   1
+; Cascade! from 12
+;     0  [3 4 4 4 0 4]
+; >      [3 0 4 4 0 4]   1
+; Cascade! from 3
+;     0  [0 4 4 4 0 4]
+; >      [4 1 5 4 0 4]   1
+; >   0  [0 4 4 4 1 5]
+;        [4 1 5 0 1 5]   2
+; Where to move from?
+; Moving from 2
+; Cascade! from 8
+; >   0  [0 4 4 4 1 6]
+;        [4 1 0 1 2 6]   2
+; Cascade! from 10
+; >   0  [0 4 4 5 0 6]
+;        [4 1 0 1 2 6]   2
+; Cascade! from 1
+; >   1  [1 5 0 5 0 6]
+;        [5 1 0 1 2 6]   2
+; Cascade! from 3
+; >   1  [1 5 0 5 0 6]
+;        [5 0 1 1 2 6]   2
+; Cascade! from 5
+; >   1  [1 5 0 5 0 6]
+;        [5 0 1 0 3 6]   2
+; Player 1 Should get another turn (TODO: implement)
+; >   2  [2 6 1 6 1 7]
+;        [5 0 1 0 3 0]   2
+; Where to move from?
+; Moving from 12
+; Cascade! from 0
+; >   3  [0 6 1 6 1 7]
+;        [5 0 1 0 3 0]   2
+; Cascade! from 7
+; >   3  [0 6 1 6 1 7]
+;        [0 1 2 1 4 1]   2
+; Cascade! from 1
+; >   4  [1 7 2 7 2 0]
+;        [1 1 2 1 4 1]   2
+; Cascade! from 3
+; >   4  [1 7 2 7 2 0]
+;        [1 0 3 1 4 1]   2
+; Cascade! from 5
+; >   4  [1 7 2 7 2 0]
+;        [1 0 3 0 5 1]   2
+; Cascade! from 8
+; >   4  [1 7 2 7 2 1]
+;        [1 0 3 0 5 0]   2
+; Cascade! from 11
+; >   4  [1 7 3 8 0 1]
+;        [1 0 3 0 5 0]   2
+;     5  [2 0 3 8 0 1]
+; >      [2 1 4 1 6 1]   2
+; Where to move from?
+; Moving from 5
+; Player 0 Should get another turn (TODO: implement)
+;     5  [2 0 3 8 0 1]
+; >      [2 1 4 1 6 0]   3
+; Where to move from?
+; Moving from 2
+; Player 0 Should get another turn (TODO: implement)
+;     5  [2 0 3 8 0 1]
+; >      [2 1 0 2 7 1]   4
+; Where to move from?
+; Moving from 5
+; Player 0 Should get another turn (TODO: implement)
+;     5  [2 0 3 8 0 1]
+; >      [2 1 0 2 7 0]   5
+; Where to move from?
+; Moving from 4
+; >   5  [2 1 4 9 1 2]
+;        [2 1 0 2 0 1]   6
+; Where to move from?
+; Moving from 9
+;     6  [3 2 5 0 1 2]
+; >      [3 2 1 3 1 1]   6
+; Where to move from?
+; Moving from 5
+; Player 0 Should get another turn (TODO: implement)
+;     6  [3 2 5 0 1 2]
+; >      [3 2 1 3 1 0]   7
+; Where to move from?
+; Moving from 3
+; Player 0 Should get another turn (TODO: implement)
+;     6  [3 2 5 0 1 2]
+; >      [3 2 1 0 2 1]   8
+; Where to move from?
+; Moving from 5
+; Player 0 Should get another turn (TODO: implement)
+;     6  [3 2 5 0 1 2]
+; >      [3 2 1 0 2 0]   9
+; Where to move from?
+; Moving from 4
+; Player 0 Should get another turn (TODO: implement)
+;     6  [3 2 5 0 1 2]
+; >      [3 2 1 0 0 1]  10
+; Where to move from?
+; Moving from 5
+; Player 0 Should get another turn (TODO: implement)
+;     6  [3 2 5 0 1 2]
+; >      [3 2 1 0 0 0]  11
+; Where to move from?
+; Moving from 0
+; >   6  [3 2 5 0 1 2]
+;        [0 3 2 1 0 0]  11
+; Where to move from?
+; Moving from 11
+; Player 1 Should get another turn (TODO: implement)
+; >   7  [4 0 5 0 1 2]
+;        [0 3 2 1 0 0]  11
+; Where to move from?
+; Moving from 12
+; Cascade! from 2
+; >   8  [0 0 5 0 1 2]
+;        [1 4 2 1 0 0]  11
+;     8  [0 0 5 0 1 2]
+; >      [1 4 0 2 1 1]  11
+; Where to move from?
+; Moving from 5
+; Player 0 Should get another turn (TODO: implement)
+;     8  [0 0 5 0 1 2]
+; >      [1 4 0 2 1 0]  12
+; Where to move from?
+; Moving from 0
+; Cascade! from 1
+;     8  [0 0 5 0 1 2]
+; >      [0 4 0 2 1 0]  12
+; Player 0 Should get another turn (TODO: implement)
+;     8  [0 0 5 0 1 2]
+; >      [0 0 1 3 2 1]  13
+; Where to move from?
+; Moving from 5
+; Player 0 Should get another turn (TODO: implement)
+;     8  [0 0 5 0 1 2]
+; >      [0 0 1 3 2 0]  14
+; Where to move from?
+; Moving from 4
+; Player 0 Should get another turn (TODO: implement)
+;     8  [0 0 5 0 1 2]
+; >      [0 0 1 3 0 1]  15
+; Where to move from?
+; Moving from 5
+; Player 0 Should get another turn (TODO: implement)
+;     8  [0 0 5 0 1 2]
+; >      [0 0 1 3 0 0]  16
+; Where to move from?
+; Moving from 3
+; Player 0 Should get another turn (TODO: implement)
+;     8  [0 0 5 0 1 2]
+; >      [0 0 1 0 1 1]  17
+; Where to move from?
+; Moving from 5
+; Player 0 Should get another turn (TODO: implement)
+;     8  [0 0 5 0 1 2]
+; >      [0 0 1 0 1 0]  18
+; Where to move from?
+; Moving from 2
+; >   8  [0 0 5 0 1 2]
+;        [0 0 0 1 1 0]  18
+; Where to move from?
+; Moving from 10
+;     9  [1 1 0 0 1 2]
+; >      [1 1 0 1 1 0]  18
+; Where to move from?
+; Moving from 3
+; Cascade! from 4
+;     9  [1 1 0 0 1 2]
+; >      [1 1 0 0 1 0]  18
+; Player 0 Should get another turn (TODO: implement)
+;     9  [1 1 0 0 1 2]
+; >      [1 1 0 0 0 1]  19
+; Where to move from?
+; Moving from 5
+; Player 0 Should get another turn (TODO: implement)
+;     9  [1 1 0 0 1 2]
+; >      [1 1 0 0 0 0]  20
+; Where to move from?
+; Moving from 0
+; Cascade! from 1
+;     9  [1 1 0 0 1 2]
+; >      [0 1 0 0 0 0]  20
+; >   9  [1 1 0 0 1 2]
+;        [0 0 1 1 0 0]  20
+; Where to move from?
+; Moving from 12
+; Player 1 Should get another turn (TODO: implement)
+; >  10  [0 1 0 0 1 2]
+;        [0 0 1 1 0 0]  20
+; Where to move from?
+; Moving from 7
+;    10  [0 1 0 1 2 0]
+; >      [0 0 1 1 0 0]  20
+; Where to move from?
+; Moving from 2
+; Cascade! from 3
+;    10  [0 1 0 1 2 0]
+; >      [0 0 0 1 0 0]  20
+; >  10  [0 1 0 1 2 0]
+;        [0 0 0 0 1 1]  20
+; Where to move from?
+; Moving from 11
+;    10  [1 0 0 1 2 0]
+; >      [0 0 0 0 1 1]  20
+; Where to move from?
+; Moving from 4
+; Cascade! from 5
+;    10  [1 0 0 1 2 0]
+; >      [0 0 0 0 0 1]  20
+; >  10  [1 0 0 1 2 1]
+;        [0 0 0 0 0 0]  21
+; Where to move from?
+; Moving from 12
+; Player 1 Should get another turn (TODO: implement)
+; >  11  [0 0 0 1 2 1]
+;        [0 0 0 0 0 0]  21
+; Where to move from?
+; Moving from 7
+; Cascade! from 8
+; >  11  [0 0 0 1 2 0]
+;        [0 0 0 0 0 0]  21
+;    11  [0 1 1 2 0 0]
+; >      [0 0 0 0 0 0]  21
+{:board [0 0 0 0 0 0 21 0 0 2 1 1 0 11], :player 0, :in-hand 0, :pos 12}
+clj꞉mancala.core꞉> 
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed

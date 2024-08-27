@@ -1,16 +1,8 @@
 (ns mancala.core
   (:gen-class))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
-
-;; cell_idx -scoring-wells-> owner_id
+;; `scoring-wells` maps cell_idx -> owner_id
 (def scoring-wells {6 0, 13 1})
-scoring-wells
-(contains? scoring-wells 6)
-(contains? scoring-wells 0)
 
 (def start-state {:board (-> (vec (repeat 14 3))
                              (assoc 6 0)
@@ -32,9 +24,16 @@ scoring-wells
 
 (print-state start-state)
 
-;; TODO: account for chained moves
-;; TODO: account for landing in scoring well
-;; (defn propagate-move [{:keys [board player in-hand pos]}]
+;; don't want to use this yet
+(defn step-forward [pos]
+  (mod (inc pos) 14))
+
+;; DONE: account for cascading moves
+;; DONE: account for landing in scoring well
+;; This code is getting pretty messy. I wonder if there's a cleaner way to express this. 
+;  - Nicer syntax?
+;  - A smarter way of representing this?
+;  - Breaking this into smaller functions?
 ;; move-state requires keys '(:board :player :in-hand :pos)
 (defn propagate-move [move-state]
   (let [{:keys [board player in-hand pos]} move-state]
@@ -42,28 +41,32 @@ scoring-wells
       move-state
       (if (and (contains? scoring-wells pos)
                (not= (scoring-wells pos) player)) ; could maybe express more concisely?
-        (recur (assoc move-state :pos (mod (inc pos) 14))) ;; skip enemy scoring cell
-        (recur (-> move-state ;; don't skip
-                   (assoc :pos (mod (inc pos) 14))
-                   (assoc :in-hand (dec in-hand))))))))
-  ;; (if (= in-hand 0)
-  ;;   {:board board :player player :in-hand in-hand :pos pos}
-  ;;   (if (and (contains? scoring-wells pos)
-  ;;            (not= (scoring-wells pos) player))
-  ;;     (recur {:board board ;; skip the cell
-  ;;             :player player
-  ;;             :in-hand in-hand
-  ;;             :pos (mod (inc pos) 14)})
-  ;;     (recur {:board (update board pos inc) ;; don't skip
-  ;;             :player player
-  ;;             :in-hand (dec in-hand)
-  ;;             :pos (mod (inc pos) 14)}))))
+        (recur (assoc move-state :pos (mod (inc pos) 14))) ;; pass over enemy scoring well
+        (if (and (= in-hand 1)
+                 (not= (board pos) 0)
+                 (not (contains? scoring-wells pos)))
+          (do (printf "Cascade! from %d\n" pos)
+              (print-state move-state)
+              (recur (-> move-state ;; cascade
+                         (assoc-in [:board pos] 0)
+                         (assoc :pos (mod (inc pos) 14))
+                         (assoc :in-hand (+ in-hand (board pos))))))
+          (if (and (= in-hand 1) (contains? scoring-wells pos))
+            (do (printf "Player %d gets another turn!\n" player)
+                (recur (-> move-state
+                           (update-in [:board pos] inc)
+                           (assoc :pos (mod (inc pos) 14))
+                           (update :in-hand dec)
+                           (assoc :player (bit-xor player 1))))) ;; flip player
+            (recur (-> move-state ;; regular case
+                       (update-in [:board pos] inc)
+                       (assoc :pos (mod (inc pos) 14))
+                       (update :in-hand dec)))))))))
 
-;; (propagate-move (assoc (assoc start-state :pos 0) :in-hand 3))
-(propagate-move (-> start-state
-                    (assoc-in [:board 0] 0)
-                    (assoc :pos 1)
-                    (assoc :in-hand 3)))
+;; (propagate-move (-> start-state
+;;                     (assoc-in [:board 0] 0)
+;;                     (assoc :pos 1)
+;;                     (assoc :in-hand 3)))
 
 ;; TODO: validate input
 (defn make-move
@@ -71,11 +74,11 @@ scoring-wells
   (println "Where to move from?")
   (let [pos (mod (Integer/parseInt (read-line)) 14)]
     (printf "Moving from %d\n" pos)
-    (assoc (propagate-move {:board (assoc board pos 0)
-                            :player player
-                            :in-hand (board pos)
-                            :pos (mod (inc pos) 14)})
-           :player (bit-xor player 1))))
+    (update (propagate-move {:board (assoc board pos 0)
+                             :player player
+                             :in-hand (board pos)
+                             :pos (mod (inc pos) 14)})
+            :player #(bit-xor %1 1))))
 
 (defn print-then-apply [state fn]
   (print-state state)
@@ -92,18 +95,12 @@ scoring-wells
     state
     (recur (make-move state))))
 
-(run-game start-state)
+;; (run-game start-state)
 
-(print-state start-state)
-;; (-> start-state
-;;     (print-then-apply make-move)
-;;     (print-then-apply make-move)
-;;     (print-then-apply make-move)
-;;     (print-state))
+(defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (run-game start-state)
+  )
 
-
-start-state
-;; how best to represent the board state?
-;; We have regular wells and scoring wells
-;; KISS for now
-;; Just have board-state only include the regular wells? 
+(-main)
